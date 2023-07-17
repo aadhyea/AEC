@@ -1,0 +1,25 @@
+body
+    {
+     background-color:lightgreen;
+    }
+h1
+    {
+     color:blue;
+    
+    }
+h2
+    {
+     color:blue;
+     
+    }
+mark{
+     background-color:#FAAFBA;
+padding:09px;
+}
+table{
+      background-color:lime;
+      padding: 10px;
+}
+span{
+    color: blue;
+}
