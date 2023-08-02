@@ -1,0 +1,18 @@
+h1{
+    color: blueviolet;
+    background-color: black;
+    font-size: 3cm;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ol{
+    color:blanchedalmond;
+    background-color:brown;
+    font-size: 20px;
+}
+
+strong{
+    font-size: 40px;
+    quotes:"'" "'" '"' '"';
+}
