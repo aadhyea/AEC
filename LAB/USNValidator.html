@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usn Validator</title>
+    <script>
+        function validate()
+        {
+            usn=document.getElementById("one")
+            alert(usn.value)
+            if(isCorrect(usn))
+                return true
+            else
+                return false
+        }
+
+        function isCorrect(elem)
+        {
+            alphaExp=/[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/
+            if(elem.value.length==0)
+            {
+                alert("Empty field")
+                elem.focus()
+                return false
+            }
+            else if(!elem.value.match(alphaExp))
+            {
+                alert("USN should be in DAADDAADDD Format")
+                elem.focus()
+                return false
+            }
+            alert("Correct format!")
+            return true
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()">
+    Enter USN:
+    <input type="text" id="one">
+    <input type="submit">
+</form>
+</body>
+</html>

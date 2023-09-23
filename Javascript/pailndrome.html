@@ -1,0 +1,41 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3c.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3c.org/1999/xhtml"> -->
+<html>
+    <head>
+        <title>Palindrome</title>
+    </head>
+    <body>
+        <script>
+            let str=prompt("Enter input")
+            if(!(isNaN(str)))
+            {
+                var temp,rev=0,rem
+                temp=parseInt(str)
+                while  (temp!=0)
+                {
+                    rem=temp%10
+                    rev=(rev*10)+rem
+                    temp=parseInt(temp/10)
+                }
+                alert("The reverse is "+rev)
+            }
+            else
+            {
+                var i;
+                for(i=0;i<str.length;i++)
+                {
+                    var ch=str.charAt(i)
+                    if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='i'||ch=='e'||ch=='o'||ch=='u')
+                        break
+                }
+
+                if(i<str.length)
+                    alert("Leftmost vowel in "+(i+1))
+                else   
+                    alert("No vowels")
+
+            }
+        </script>
+    </body>
+</html>

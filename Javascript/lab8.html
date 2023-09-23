@@ -1,0 +1,42 @@
+<!-- lab 8: simple Calculator -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <label>Enter Operand 1</label>
+    <input type="text" id="operand1"><br>
+    <label>Enter Operand 2</label>
+    <input type="text" id="operand2"><br>
+
+    <label>Operation: </label>
+    <input type="text" id="op"><br>
+    <input type="submit" onclick="calc()">
+
+    <script>
+        function calc(){
+            var a,b,op
+            a=parseInt(document.getElementById("operand1").value)
+            b=parseInt(document.getElementById("operand2").value)
+            op=document.getElementById("op").value
+
+            var res
+            if(op==="Addition")
+                res=a+b
+            else if(op==="Sub")
+                res=a-b
+            else if(op==="Mul")
+                res=a*b
+            else if(op==="Div" && b>0)
+                res=a/b
+
+
+            alert("Result = "+res)
+
+        }
+    </script>
+</body>
+</html>
